@@ -27,23 +27,36 @@ Wish you a good-looking profile README!
 
 -->
 
-## Hey, ouuan here! :wave:
+My name is Y**ou** Y**u**f**an**<!-- the bold part is the origin of my ID -->. I'm a senior undergraduate and incoming graduate student at Tsinghua University in China.
 
-[<img align="right" width="50%" src="https://github-readme-stats-ouuan.vercel.app/api?username=ouuan&theme=dark&show_icons=true">](https://metrics.lecoq.io/ouuan#gh-dark-mode-only)
-[<img align="right" width="50%" src="https://github-readme-stats-ouuan.vercel.app/api?username=ouuan&show_icons=true">](https://metrics.lecoq.io/ouuan#gh-light-mode-only)
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-ouuan.vercel.app/api?username=ouuan&theme=dark&show_icons=true">
+    <img align="right" width="50%" src="https://github-readme-stats-ouuan.vercel.app/api?username=ouuan&show_icons=true">
+</picture>
 
-I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
-
--   :hammer_and_pick: C++ / Qt / TypeScript / Vue / Rust / Python
--   :pencil2: [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) / [i3wm](https://i3wm.org/) / [Neovim](https://neovim.io/) / [nnn](https://github.com/jarun/nnn) / [yadm](https://github.com/TheLocehiliosan/yadm)
--   :seedling: Taking courses & doing assignments at THU
--   :man: Pronouns: he/him
--   :thought_balloon: Ask me anything at [Discussions](https://github.com/ouuan/ouuan/discussions/new)!
+-   :pencil2: Rust / C++ / TypeScript / Vue / Python / SystemVerilog
+-   :package: [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) / [i3wm](https://i3wm.org/) / [neovim](https://neovim.io/) / [nnn](https://github.com/jarun/nnn) / [mpv](https://mpv.io/) / [Firefox](https://www.mozilla.org/firefox/) / [yadm](https://github.com/TheLocehiliosan/yadm)
+-   :seedling: Doing Web security research with @chenjj
+-   :thought_balloon: Ask me anything at [Discussions](https://github.com/ouuan/ouuan/discussions/new/choose)!
+-   :mag: [CVEs discovered by me](CVE.md)
+-   :star: [Projects starred by me](AWESOME-STARS.md)
 -   :key: GPG key: [`863A0F9FA8127FA4`](https://github.com/ouuan.gpg)
 
 ---
 
-#### :sparkles: [My followers](src/getTopFollowers.py)
+### :pencil: [Latest blog posts](https://ouuan.moe?utm_source=GitHubProfile)
+
+<!--START_SECTION:blog-posts-->
+-   2024-12-29 [ASIS CTF Finals 2024 Write-Up](https://ouuan.moe/post/2024/12/asis-ctf-finals-2024?utm_source=GitHubProfile)
+-   2024-12-17 [TSG CTF 2024 Web Write-Up](https://ouuan.moe/post/2024/12/tsgctf-2024-web?utm_source=GitHubProfile)
+-   2024-10-20 [GeekGame 2024 Write-Up](https://ouuan.moe/post/2024/10/geekgame-2024?utm_source=GitHubProfile)
+-   2024-10-15 [在 i3 中使用多显示器](https://ouuan.moe/post/2024/10/i3-multi-monitor?utm_source=GitHubProfile)
+-   2024-08-18 [离群点](https://ouuan.moe/post/2024/07/outlier?utm_source=GitHubProfile)
+<!--END_SECTION:blog-posts-->
+
+---
+
+### :sparkles: [My followers](src/getTopFollowers.py)
 
 <!--START_SECTION:top-followers-->
 <table>
@@ -56,6 +69,13 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
       <a href="https://github.com/wizardforcel">布客飞龙</a>
     </td>
     <td align="center">
+      <a href="https://github.com/EndlessCheng">
+        <img src="https://avatars2.githubusercontent.com/u/7086966" width="100px;" alt="EndlessCheng"/>
+      </a>
+      <br />
+      <a href="https://github.com/EndlessCheng">灵茶山艾府 [0x3F]</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/gaocegege">
         <img src="https://avatars2.githubusercontent.com/u/5100735" width="100px;" alt="gaocegege"/>
       </a>
@@ -63,48 +83,18 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
       <a href="https://github.com/gaocegege">Ce Gao</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Harry-Chen">
-        <img src="https://avatars2.githubusercontent.com/u/2819727" width="100px;" alt="Harry-Chen"/>
+      <a href="https://github.com/zer0yu">
+        <img src="https://avatars2.githubusercontent.com/u/16551733" width="100px;" alt="zer0yu"/>
       </a>
       <br />
-      <a href="https://github.com/Harry-Chen">Shengqi Chen</a>
+      <a href="https://github.com/zer0yu">z3r0yu</a>
     </td>
     <td align="center">
-      <a href="https://github.com/losfair">
-        <img src="https://avatars2.githubusercontent.com/u/6104981" width="100px;" alt="losfair"/>
+      <a href="https://github.com/guofei9987">
+        <img src="https://avatars2.githubusercontent.com/u/19920283" width="100px;" alt="guofei9987"/>
       </a>
       <br />
-      <a href="https://github.com/losfair">Heyang Zhou</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/mashirozx">
-        <img src="https://avatars2.githubusercontent.com/u/16148054" width="100px;" alt="mashirozx"/>
-      </a>
-      <br />
-      <a href="https://github.com/mashirozx">Mashiro</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/webpointdev">
-        <img src="https://avatars2.githubusercontent.com/u/88071912" width="100px;" alt="webpointdev"/>
-      </a>
-      <br />
-      <a href="https://github.com/webpointdev">New Dragon Warrior</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Ir1d">
-        <img src="https://avatars2.githubusercontent.com/u/10709657" width="100px;" alt="Ir1d"/>
-      </a>
-      <br />
-      <a href="https://github.com/Ir1d">Dejia Xu</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/lzwjava">
-        <img src="https://avatars2.githubusercontent.com/u/5022872" width="100px;" alt="lzwjava"/>
-      </a>
-      <br />
-      <a href="https://github.com/lzwjava">lzwjava</a>
+      <a href="https://github.com/guofei9987">郭飞</a>
     </td>
     <td align="center">
       <a href="https://github.com/hua1995116">
@@ -120,63 +110,35 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
       <br />
       <a href="https://github.com/lowlighter">Simon Lecoq</a>
     </td>
-    <td align="center">
-      <a href="https://github.com/zTrix">
-        <img src="https://avatars2.githubusercontent.com/u/471934" width="100px;" alt="zTrix"/>
-      </a>
-      <br />
-      <a href="https://github.com/zTrix">Wenlei Zhu</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Trumeet">
-        <img src="https://avatars2.githubusercontent.com/u/17158086" width="100px;" alt="Trumeet"/>
-      </a>
-      <br />
-      <a href="https://github.com/Trumeet">Yuuta Liang</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/EndlessCheng">
-        <img src="https://avatars2.githubusercontent.com/u/7086966" width="100px;" alt="EndlessCheng"/>
-      </a>
-      <br />
-      <a href="https://github.com/EndlessCheng">灵茶山艾府（0x3F）</a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/guofei9987">
-        <img src="https://avatars2.githubusercontent.com/u/19920283" width="100px;" alt="guofei9987"/>
-      </a>
-      <br />
-      <a href="https://github.com/guofei9987">郭飞</a>
-    </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/gdut-yy">
-        <img src="https://avatars2.githubusercontent.com/u/33390928" width="100px;" alt="gdut-yy"/>
+      <a href="https://github.com/losfair">
+        <img src="https://avatars2.githubusercontent.com/u/6104981" width="100px;" alt="losfair"/>
       </a>
       <br />
-      <a href="https://github.com/gdut-yy">张逸扬</a>
+      <a href="https://github.com/losfair">Heyang Zhou</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Fantasy9527">
-        <img src="https://avatars2.githubusercontent.com/u/9129438" width="100px;" alt="Fantasy9527"/>
+      <a href="https://github.com/Harry-Chen">
+        <img src="https://avatars2.githubusercontent.com/u/2819727" width="100px;" alt="Harry-Chen"/>
       </a>
       <br />
-      <a href="https://github.com/Fantasy9527">No.142857</a>
+      <a href="https://github.com/Harry-Chen">Shengqi Chen</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Clansty">
-        <img src="https://avatars2.githubusercontent.com/u/18461360" width="100px;" alt="Clansty"/>
+      <a href="https://github.com/mashirozx">
+        <img src="https://avatars2.githubusercontent.com/u/16148054" width="100px;" alt="mashirozx"/>
       </a>
       <br />
-      <a href="https://github.com/Clansty">凌莞~(=^▽^=)</a>
+      <a href="https://github.com/mashirozx">Mashiro</a>
     </td>
     <td align="center">
-      <a href="https://github.com/tengge1">
-        <img src="https://avatars2.githubusercontent.com/u/10705556" width="100px;" alt="tengge1"/>
+      <a href="https://github.com/Ir1d">
+        <img src="https://avatars2.githubusercontent.com/u/10709657" width="100px;" alt="Ir1d"/>
       </a>
       <br />
-      <a href="https://github.com/tengge1">tengge1</a>
+      <a href="https://github.com/Ir1d">Dejia Xu</a>
     </td>
     <td align="center">
       <a href="https://github.com/Konano">
@@ -186,6 +148,57 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
       <a href="https://github.com/Konano">Nano</a>
     </td>
     <td align="center">
+      <a href="https://github.com/SunsetMkt">
+        <img src="https://avatars2.githubusercontent.com/u/26019675" width="100px;" alt="SunsetMkt"/>
+      </a>
+      <br />
+      <a href="https://github.com/SunsetMkt">Sunset Mikoto</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/clansty">
+        <img src="https://avatars2.githubusercontent.com/u/18461360" width="100px;" alt="clansty"/>
+      </a>
+      <br />
+      <a href="https://github.com/clansty">凌莞~(=^▽^=)</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/taoso">
+        <img src="https://avatars2.githubusercontent.com/u/2030591" width="100px;" alt="taoso"/>
+      </a>
+      <br />
+      <a href="https://github.com/taoso">taoso</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/lzwjava">
+        <img src="https://avatars2.githubusercontent.com/u/5022872" width="100px;" alt="lzwjava"/>
+      </a>
+      <br />
+      <a href="https://github.com/lzwjava">Zhiwei Li</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Trumeet">
+        <img src="https://avatars2.githubusercontent.com/u/17158086" width="100px;" alt="Trumeet"/>
+      </a>
+      <br />
+      <a href="https://github.com/Trumeet">Yuuta Liang</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/WBGlIl">
+        <img src="https://avatars2.githubusercontent.com/u/29301859" width="100px;" alt="WBGlIl"/>
+      </a>
+      <br />
+      <a href="https://github.com/WBGlIl">WBGlIl</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Enter-tainer">
+        <img src="https://avatars2.githubusercontent.com/u/25521218" width="100px;" alt="Enter-tainer"/>
+      </a>
+      <br />
+      <a href="https://github.com/Enter-tainer">Wenzhuo Liu</a>
+    </td>
+    <td align="center">
       <a href="https://github.com/cubercsl">
         <img src="https://avatars2.githubusercontent.com/u/22931465" width="100px;" alt="cubercsl"/>
       </a>
@@ -193,11 +206,11 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
       <a href="https://github.com/cubercsl">cubercsl</a>
     </td>
     <td align="center">
-      <a href="https://github.com/WhaleFell">
-        <img src="https://avatars2.githubusercontent.com/u/63758849" width="100px;" alt="WhaleFell"/>
+      <a href="https://github.com/iBug">
+        <img src="https://avatars2.githubusercontent.com/u/7273074" width="100px;" alt="iBug"/>
       </a>
       <br />
-      <a href="https://github.com/WhaleFell">落落</a>
+      <a href="https://github.com/iBug">iBug</a>
     </td>
   </tr>
 </table>
@@ -205,23 +218,16 @@ I'm Y**ou** Y**u**f**an**, an undergraduate student at THU.
 
 ---
 
-#### :bar_chart: [Monthly coding time](https://github.com/muety/wakapi)
+### :bar_chart: [Coding time in the last month](https://github.com/muety/wakapi)
 
 <!--START_SECTION:waka-->
 
-```text
-Rust         97 hrs 46 mins  🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜   69.27 %
-Vue          14 hrs 10 mins  🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   10.03 %
-Markdown     9 hrs 25 mins   🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   06.67 %
-C++          2 hrs 45 mins   🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   01.94 %
-JSON         2 hrs 38 mins   🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   01.86 %
-SQL          2 hrs 28 mins   🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   01.74 %
+```txt
+Python          27 hrs 57 mins  🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   21.64 %
+TeX             20 hrs 59 mins  🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   16.24 %
+Markdown        12 hrs 38 mins  🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   09.78 %
+JavaScript      10 hrs 57 mins  🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   08.48 %
+Rust            6 hrs 43 mins   🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   05.20 %
 ```
 
 <!--END_SECTION:waka-->
-
----
-
-#### :star2: [Projects starred by me](https://github.com/maguowei/starred)
-
-[My Awesome Stars](AWESOME-STARS.md)
