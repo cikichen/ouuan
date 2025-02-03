@@ -1,5 +1,5 @@
 """
-   Copyright 2020-2022 Yufan You <https://github.com/ouuan>
+   Copyright 2020-2024 Yufan You <https://github.com/ouuan>
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -18,6 +18,8 @@ import requests
 import json
 import sys
 import re
+from time import sleep
+from functools import partial
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 4)
@@ -25,19 +27,24 @@ if __name__ == "__main__":
     token = sys.argv[2]
     readmePath = sys.argv[3]
 
+    print = partial(print, flush = True)
+
     headers = {
         "Authorization": f"token {token}"
     }
 
     followers = []
     cursor = None
+    retryCount = 0
+    cwnd = 1
+    ssthresh = 20
 
     while True:
         query = f'''
 query {{
     user(login: "{handle}") {{
-        followers(first: 100{f', after: "{cursor}"' if cursor else ''}) {{
-            pageInfo{{
+        followers(first: {cwnd}{f', after: "{cursor}"' if cursor else ''}) {{
+            pageInfo {{
                 endCursor
                 hasNextPage
             }}
@@ -48,38 +55,100 @@ query {{
                 following {{
                     totalCount
                 }}
-                repositories(first: 3, isFork: false, orderBy: {{
-                    field: STARGAZERS,
-                    direction: DESC
-                }}) {{
+                followers {{
                     totalCount
+                }}
+                repositories(
+                    first: 20,
+                    orderBy: {{
+                        field: STARGAZERS,
+                        direction: DESC,
+                    }},
+                ) {{
                     nodes {{
                         stargazerCount
                     }}
                 }}
-                followers {{
-                    totalCount
+                repositoriesContributedTo(
+                    first: 50,
+                    contributionTypes: [COMMIT],
+                    orderBy: {{
+                        field: STARGAZERS,
+                        direction: DESC,
+                    }},
+                ) {{
+                    nodes {{
+                        stargazerCount
+                    }}
+                }}
+                contributionsCollection {{
+                    contributionCalendar {{
+                        totalContributions
+                    }}
                 }}
             }}
         }}
     }}
 }}
 '''
-        response = requests.post(f"https://api.github.com/graphql", json.dumps({ "query": query }), headers = headers)
+        try:
+            response = requests.post(f"https://api.github.com/graphql", json.dumps({ "query": query }), headers = headers)
+        except Exception as e:
+            if retryCount >= 3:
+                raise e
+            print("Network error, retrying")
+            sleep(5)
+            retryCount += 1
+            continue
+        if not response.ok or "data" not in response.json():
+            if retryCount < 3:
+                retryCount += 1
+                if "Retry-After" in response.headers:
+                    wait = int(response.headers["Retry-After"])
+                    print(f"Rate limit exceeded, retry after {wait} seconds")
+                    sleep(wait)
+                    continue
+                ssthresh = cwnd // 2
+                cwnd = 1
+                print(f"Error, entering slow start with {ssthresh = }")
+                sleep(5)
+                continue
+            print(query)
+            print(response.status_code)
+            print(response.headers)
+            print(response.text)
+            exit(1)
+        retryCount = 0
+        if cwnd < ssthresh:
+            cwnd = min(ssthresh, cwnd * 2)
+        else:
+            cwnd += 1
         res = response.json()["data"]["user"]["followers"]
         for follower in res["nodes"]:
             following = follower["following"]["totalCount"]
-            repoCount = follower["repositories"]["totalCount"]
             login = follower["login"]
             name = follower["name"]
             id = follower["databaseId"]
             followerNumber = follower["followers"]["totalCount"]
-            thirdStars = follower["repositories"]["nodes"][2]["stargazerCount"] if repoCount >= 3 else 0
-            if following > thirdStars * 50 + repoCount * 5 + followerNumber:
-                print(f"Skipped: https://github.com/{login} with {followerNumber} followers and {following} following")
+            active = follower["contributionsCollection"]["contributionCalendar"]["totalContributions"] > 5
+            if not active:
+                print(f"Skipped{'*' if followerNumber > 500 else ''} (inactive): https://github.com/{login} with {followerNumber} followers and {following} following")
+                continue
+            quota = followerNumber
+            for i, starCount in enumerate([repo["stargazerCount"] for repo in follower["repositories"]["nodes"]]):
+                if starCount <= i:
+                    break
+                quota += starCount * (i + 1)
+            for i, starCount in enumerate([repo["stargazerCount"] for repo in follower["repositoriesContributedTo"]["nodes"]]):
+                if starCount <= i:
+                    break
+                quota += i * 5
+            if following > quota:
+                print(f"Skipped{'*' if followerNumber > 500 else ''} (quota): https://github.com/{login} with {followerNumber} followers and {following} following")
                 continue
             followers.append((followerNumber, login, id, name if name else login))
             print(followers[-1])
+        sys.stdout.flush()
         if not res["pageInfo"]["hasNextPage"]:
             break
         cursor = res["pageInfo"]["endCursor"]
